@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/site.css') }}"/>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">嘉然BBS</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="routeVariable" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        个人
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="routeVariable">
+                        <a class="dropdown-item" href="{{ url_for('show_person_info') }}">个人信息</a>
+                        <a class="dropdown-item" href="#">最近动态</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="requestData" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        热帖
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="requestData">
+                        <a class="dropdown-item"
+                           href="{{ url_for('show_click_top10_post') }}">点击前十</a>
+                        <a class="dropdown-item" href="{{ url_for('show_reply_top10_post') }}">回复前十</a>
+                    </div>
+                </li>
+                
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="routeVariable" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        版贴
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="routeVariable">
+                        <a class="dropdown-item" href="{{ url_for('show_all_section') }}">版块信息</a>
+                        <a class="dropdown-item" href="{{ url_for('show_all_post') }}">全部帖子</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="routeVariable" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        搜索
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="routeVariable">
+                        <a class="dropdown-item" href="{{ url_for('search_post') }}">搜索帖子</a>
+                        <a class="dropdown-item" href="{{ url_for('search_user') }}">搜索用户</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="routeVariable" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        发帖
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="routeVariable">
+                        <a class="dropdown-item" href="{{ url_for('send_one_post') }}">发帖</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="routeVariable" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        管理
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="routeVariable">
+                        <a class="dropdown-item" href="{{ url_for('search_post') }}">版主页面</a>
+                        <a class="dropdown-item" href="{{ url_for('search_user') }}">管理员页面</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<main class="container" role="main">
+    {% block body %}{% endblock %}
+</main>
+
+<div class="container footer">
+    <hr>
+    <p>信息已经全部展示</p>
+</div>
+
+<script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static',filename='js/bootstrap.bundle.js') }}"></script>
+
+</body>
+</html>

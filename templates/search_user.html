@@ -1,0 +1,51 @@
+{% extends 'after_layout.html' %}
+{% block title %}搜索用户{% endblock %}
+{% block body %}
+
+		<div class="row justify-content-center">
+        <div class="col-6">
+            <form id="search_form" action="{{ url_for('search_user_form') }}" method="post" enctype="multipart/form-data">
+                <legend>搜索</legend>
+                <div class="form-group">
+                    <label for="keyWord">账号或昵称的关键词</label>
+                    <input type="text" class="form-control" name="keyWord" id="keyWord"
+                           placeholder="请输入账号或昵称的关键词">
+                </div>
+                <button class="btn btn-success" form="search_form">提交</button>
+                <h1></h1>
+                {{提示|safe}}
+            </form>
+        </div>
+        <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">账号</th>
+                        <th scope="col">昵称</th>
+                        <th scope="col">生日</th>
+                        <th scope="col">性别</th>
+                        <th scope="col">电子邮件</th>
+                        <th scope="col">等级</th>
+                        <th scope="col">注册时间</th>
+                        <th scope="col">身份</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in content %}
+                        <tr>
+                            <td>{{ item[0]}}</td>
+                            <td>{{ item[1]}}</td>
+                            <td>{{ item[2]}}</td>
+                            <td>{{ item[3]}}</td>
+                            <td>{{ item[4]}}</td>
+                            <td>{{ item[5]}}</td>
+                            <td>{{ item[6]}}</td>
+                            <td>{{ item[7]}}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+    </div>
+</html>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'after_layout.html' %}
+{% block title %}{{post_title}}{% endblock %}
+{% block body %}
+    <center>
+    <div class="jumbotron" style="width:90%">
+        <h2 class = "text-success">帖子：{{post_title}}</h2>
+        <p></p>
+        <p class = "text-primary"> 作者：{{nickname}}  &nbsp 发表时间：{{post_time}} </p>
+        <p></p>
+        <p class="text-left" class = "text-info">内容：</p>
+        <p class="text-left" class = "text-info">{{post_content}}</p>
+    </div>
+    </center>
+    <form id = "reply_form" action="{{ url_for('reply_form') }}" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <center><h4 class = "text-primary" name= "post_number">我来回复:</h4></center>
+            <center>
+            <select  style="width:90%" class="form-control" id = "post_number" name = "post_number">
+                            <option>帖号-{{post_number}}</option>
+            </select>
+            </center>
+            <center><textarea style="width:90%" class="form-control" rows="4" name = "reply_content" placeholder="请文明回复~"  id ="reply_content" ></textarea></center>
+        </div> 
+        <center><button class="btn btn-success" form="reply_form">提交</button></center>
+    </form>
+    <p></p>
+<center>
+    <ul class="list-group" style="width:80%">
+    {% for item in reply_content %}
+    <li class="list-group-item" style="word-break:break-all; word-wrap:break-all;" >
+        <h5 class = "text-info">
+        第{{item[1]}}层 &nbsp
+        作者：{{item[3]}}  &nbsp 
+        回复时间：{{item[6]}} &nbsp
+        点赞数：{{item[7]}} 
+        </h5>
+        <strong><p class="text-left" class="list-group-item-text" >{{item[5]}}</p></strong>
+        <button class="btn btn-success">赞一下</button>
+        &nbsp&nbsp&nbsp&nbsp&nbsp
+        <button class="btn btn-warning">踩一下</button>
+        <p></p>
+    </li>
+    {% endfor %}
+    </ul>
+</center>
+
+{% endblock %}

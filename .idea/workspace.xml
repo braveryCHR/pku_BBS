@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7622524a-df23-4875-907e-421194a7d1ac" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bbs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dbop.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xml_generate.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/pku_BBS$bbs.coverage" NAME="bbs Coverage Results" MODIFIED="1545386173306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pku_BBS$PCA_LDA.coverage" NAME="PCA&amp;LDA Coverage Results" MODIFIED="1545316842074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../作业/模式识别" />
+    <SUITE FILE_PATH="coverage/pku_BBS$dbop.coverage" NAME="dbop Coverage Results" MODIFIED="1545380774808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="dbop.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbop.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#197#4685#0" expanded="false" />
+                <element signature="e#4750#5232#0" expanded="false" />
+                <element signature="e#5298#5780#0" expanded="false" />
+                <element signature="e#5898#7422#0" expanded="false" />
+                <element signature="e#7465#9252#0" expanded="false" />
+                <element signature="e#9295#11977#0" expanded="false" />
+                <element signature="e#12031#13582#0" expanded="false" />
+                <element signature="e#13640#15007#0" expanded="false" />
+                <element signature="e#15183#15927#0" expanded="false" />
+                <element signature="e#15983#16410#0" expanded="false" />
+                <element signature="e#16460#16650#0" expanded="false" />
+                <element signature="e#16698#17262#0" expanded="false" />
+                <element signature="e#17327#17696#0" expanded="false" />
+                <element signature="e#17736#18167#0" expanded="false" />
+                <element signature="e#18221#19129#0" expanded="false" />
+                <element signature="e#19193#24218#0" expanded="false" />
+                <element signature="e#24298#24572#0" expanded="false" />
+                <element signature="e#24613#25135#0" expanded="false" />
+                <element signature="e#25230#26634#0" expanded="false" />
+                <element signature="e#26678#26862#0" expanded="false" />
+                <element signature="e#26981#27835#0" expanded="false" />
+                <element signature="e#27887#28408#0" expanded="false" />
+                <element signature="e#28460#28843#0" expanded="false" />
+                <marker date="1545384580227" expanded="true" signature="303:884" ph="create table... if" />
+                <marker date="1545384580227" expanded="true" signature="953:1129" ph="create table... if" />
+                <marker date="1545384580227" expanded="true" signature="1194:1907" ph="create table... if" />
+                <marker date="1545384580227" expanded="true" signature="1973:2510" ph="create table... if" />
+                <marker date="1545384580227" expanded="true" signature="2575:2882" ph="create table... if" />
+                <marker date="1545384580227" expanded="true" signature="2948:3277" ph="create table... if" />
+                <marker date="1545384580227" expanded="true" signature="3342:3713" ph="create table... if" />
+                <marker date="1545384580227" expanded="true" signature="4075:4218" ph="select post_... recentpost_info" />
+                <marker date="1545384580227" expanded="true" signature="4163:4216" ph="select UNIX_... recentpost_info" />
+                <marker date="1545384580227" expanded="true" signature="4284:4332" ph="update on re... " />
+                <marker date="1545384580227" expanded="true" signature="4776:5052" ph="select post_... post_info" />
+                <marker date="1545384580227" expanded="true" signature="5324:5600" ph="select post_... post_info" />
+                <marker date="1545384580227" expanded="true" signature="5907:6380" ph="select user_... user_info" />
+                <marker date="1545384580227" expanded="true" signature="6447:6961" ph="select user_... user_info" />
+                <marker date="1545384580227" expanded="true" signature="6711:6768" ph="SELECT post_... post_info" />
+                <marker date="1545384580227" expanded="true" signature="7783:7812" ph="select count... sec_info" />
+                <marker date="1545384580227" expanded="true" signature="7974:8502" ph="select secti... post_info" />
+                <marker date="1545384580227" expanded="true" signature="8668:8701" ph="insert into hottest... " />
+                <marker date="1545384580227" expanded="true" signature="8846:9001" ph="select disti... hottest" />
+                <marker date="1545384580227" expanded="true" signature="9309:9338" ph="select count... sec_info" />
+                <marker date="1545384580227" expanded="true" signature="9509:9548" ph="select avg(c... post_info" />
+                <marker date="1545384580227" expanded="true" signature="9679:9796" ph="select * fro... post_info" />
+                <marker date="1545384580227" expanded="true" signature="10431:10624" ph="select accou... reply_info" />
+                <marker date="1545384580227" expanded="true" signature="10520:10577" ph="select post_... post_info" />
+                <marker date="1545384580227" expanded="true" signature="10958:11031" ph="insert into user_tmp... " />
+                <marker date="1545384580227" expanded="true" signature="11184:11273" ph="select avg(c... user_tmp" />
+                <marker date="1545384580227" expanded="true" signature="11426:11509" ph="update user_... " />
+                <marker date="1545384580227" expanded="true" signature="11674:11756" ph="select * fro... user_tmp" />
+                <marker date="1545384580227" expanded="true" signature="12095:12210" ph="select accou... post_info" />
+                <marker date="1545384580227" expanded="true" signature="12234:12349" ph="select accou... post_info" />
+                <marker date="1545384580227" expanded="true" signature="12842:12873" ph="insert into usera... " />
+                <marker date="1545384580227" expanded="true" signature="13043:13074" ph="insert into userb... " />
+                <marker date="1545384580227" expanded="true" signature="13174:13257" ph="select * fro... usera" />
+                <marker date="1545384580227" expanded="true" signature="13694:13759" ph="select birth... user_info" />
+                <marker date="1545384580227" expanded="true" signature="14321:14482" ph="select * fro... post_info" />
+                <marker date="1545384580227" expanded="true" signature="14612:14775" ph="select * fro... reply_info" />
+                <marker date="1545384580227" expanded="true" signature="15196:15247" ph="select count... user_info" />
+                <marker date="1545384580227" expanded="true" signature="15492:15660" ph="insert into user_info... " />
+                <marker date="1545384580227" expanded="true" signature="15996:16047" ph="select count... user_info" />
+                <marker date="1545384580227" expanded="true" signature="16467:16511" ph="select * fro... user_info" />
+                <marker date="1545384580227" expanded="true" signature="16728:16788" ph="select secti... sec_info" />
+                <marker date="1545384580227" expanded="true" signature="16982:17036" ph="select count... post_info" />
+                <marker date="1545384580227" expanded="true" signature="16982:17038" ph="select count... post_info" />
+                <marker date="1545384580227" expanded="true" signature="17349:17517" ph="select post_... post_info" />
+                <marker date="1545384580227" expanded="true" signature="17349:17575" ph="select post_... post_info" />
+                <marker date="1545384580227" expanded="true" signature="17762:18057" ph="select post_... post_info" />
+                <marker date="1545384580227" expanded="true" signature="18244:18315" ph="select reply... post_info" />
+                <marker date="1545384580227" expanded="true" signature="18465:18552" ph="update post_... " />
+                <marker date="1545384580227" expanded="true" signature="18664:18720" ph="select * fro... post_info" />
+                <marker date="1545384580227" expanded="true" signature="18664:18722" ph="select * fro... post_info" />
+                <marker date="1545384580227" expanded="true" signature="18867:18923" ph="select * fro... reply_info" />
+                <marker date="1545384580227" expanded="true" signature="18867:18963" ph="select * fro... reply_info" />
+                <marker date="1545384580227" expanded="true" signature="19330:19477" ph="insert into user_info... " />
+                <marker date="1545384580227" expanded="true" signature="20377:20440" ph="insert into sec_info... " />
+                <marker date="1545384580227" expanded="true" signature="20708:20926" ph="insert into post_info... " />
+                <marker date="1545384580227" expanded="true" signature="20957:21111" ph="insert into reply_info... " />
+                <marker date="1545384580227" expanded="true" signature="23780:23847" ph="UPDATE post_... " />
+                <marker date="1545384580227" expanded="true" signature="24320:24496" ph="update post_... " />
+                <marker date="1545384580227" expanded="true" signature="24384:24482" ph="select count... reply_info" />
+                <marker date="1545384580227" expanded="true" signature="24640:24802" ph="update post_... " />
+                <marker date="1545384580227" expanded="true" signature="24700:24788" ph="select nickn... user_info" />
+                <marker date="1545384580227" expanded="true" signature="24851:25015" ph="update reply... " />
+                <marker date="1545384580227" expanded="true" signature="24912:25001" ph="select nickn... user_info" />
+                <marker date="1545384580227" expanded="true" signature="25253:25317" ph="select count... reply_info" />
+                <marker date="1545384580227" expanded="true" signature="25253:25319" ph="select count... reply_info" />
+                <marker date="1545384580227" expanded="true" signature="25468:25531" ph="select nickn... user_info" />
+                <marker date="1545384580227" expanded="true" signature="25669:25843" ph="insert into reply_info... " />
+                <marker date="1545384580227" expanded="true" signature="26021:26110" ph="update post_... " />
+                <marker date="1545384580227" expanded="true" signature="26021:26112" ph="update post_... " />
+                <marker date="1545384580227" expanded="true" signature="26219:26290" ph="select reply... post_info" />
+                <marker date="1545384580227" expanded="true" signature="26440:26527" ph="update post_... " />
+                <marker date="1545384580227" expanded="true" signature="26700:26722" ph="select * fro... sec_info" />
+                <marker date="1545384580227" expanded="true" signature="27004:27034" ph="select count... post_info" />
+                <marker date="1545384580227" expanded="true" signature="27167:27230" ph="select nickn... user_info" />
+                <marker date="1545384580227" expanded="true" signature="27368:27536" ph="insert into post_info... " />
+                <marker date="1545384580227" expanded="true" signature="27368:27611" ph="insert into post_info... " />
+                <marker date="1545384580227" expanded="true" signature="27909:28179" ph="select post_... post_info" />
+                <marker date="1545384580227" expanded="true" signature="27909:28237" ph="select post_... post_info" />
+                <marker date="1545384580227" expanded="true" signature="28482:28652" ph="select accou... user_info" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bbs.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bbs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="190" column="9" lean-forward="true" selection-start-line="190" selection-start-column="9" selection-end-line="190" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#104#246#0" expanded="false" />
+                <element signature="e#1549#1597#0" expanded="false" />
+                <element signature="e#1653#1766#0" expanded="false" />
+                <element signature="e#1816#1892#0" expanded="false" />
+                <element signature="e#2606#2688#0" expanded="false" />
+                <element signature="e#3837#4020#0" expanded="false" />
+                <element signature="e#4088#4204#0" expanded="false" />
+                <element signature="e#4335#4742#0" expanded="false" />
+                <element signature="e#4808#4934#0" expanded="false" />
+                <element signature="e#5783#5964#0" expanded="false" />
+                <element signature="e#6072#6253#0" expanded="false" />
+                <element signature="e#6353#6761#0" expanded="false" />
+                <element signature="e#6825#7004#0" expanded="false" />
+                <element signature="e#7092#7852#0" expanded="false" />
+                <element signature="e#8388#8885#0" expanded="false" />
+                <element signature="e#8999#9275#0" expanded="false" />
+                <element signature="e#9367#9806#0" expanded="false" />
+                <element signature="e#9835#9917#0" expanded="false" />
+                <element signature="e#9982#10021#0" expanded="false" />
+                <element signature="e#10081#10120#0" expanded="false" />
+                <marker date="1545386171181" expanded="false" signature="1963:2550" ph="..." />
+                <marker date="1545386171181" expanded="false" signature="2764:3763" ph="..." />
+                <marker date="1545386171181" expanded="false" signature="5050:5675" ph="..." />
+                <marker date="1545386171181" expanded="false" signature="7955:8303" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xml_generate.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/xml_generate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="108" column="9" lean-forward="true" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
+              <folding>
+                <element signature="e#11#50#0" expanded="true" />
+                <element signature="e#103#314#0" expanded="false" />
+                <element signature="e#388#3301#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pass</find>
+      <find>nickname</find>
+      <find>email</find>
+      <find>init_sna</find>
+      <find>error</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/show_section.html" />
+        <option value="$PROJECT_DIR$/xml_generate.py" />
+        <option value="$PROJECT_DIR$/../../作业/模式识别/PCA&amp;LDA.py" />
+        <option value="$PROJECT_DIR$/dbop.py" />
+        <option value="$PROJECT_DIR$/bbs.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-92" />
+    <option name="y" value="12" />
+    <option name="width" value="1814" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../story_create" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.bbs">
+    <configuration name="PCA&amp;LDA" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../作业/模式识别" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pku_BBS" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../作业/模式识别/PCA&amp;LDA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="bbs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pku_BBS" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bbs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="dbop" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pku_BBS" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dbop.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.bbs" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dbop" />
+      <item index="2" class="java.lang.String" itemvalue="Python.PCA&amp;LDA" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.bbs" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dbop" />
+        <item index="2" class="java.lang.String" itemvalue="Python.PCA&amp;LDA" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7622524a-df23-4875-907e-421194a7d1ac" name="默认的" comment="" />
+      <created>1545043683976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545043683976</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20615034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37768242" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40772533" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="27" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dbop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="548" column="17" lean-forward="false" selection-start-line="548" selection-start-column="17" selection-end-line="548" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#197#4685#0" expanded="false" />
+            <element signature="e#4750#5232#0" expanded="false" />
+            <element signature="e#5298#5780#0" expanded="false" />
+            <element signature="e#5898#7422#0" expanded="false" />
+            <element signature="e#7465#9252#0" expanded="false" />
+            <element signature="e#9295#11977#0" expanded="false" />
+            <element signature="e#12031#13582#0" expanded="false" />
+            <element signature="e#13640#15007#0" expanded="false" />
+            <element signature="e#15183#15927#0" expanded="false" />
+            <element signature="e#15983#16410#0" expanded="false" />
+            <element signature="e#16460#16650#0" expanded="false" />
+            <element signature="e#16698#17262#0" expanded="false" />
+            <element signature="e#17327#17696#0" expanded="false" />
+            <element signature="e#17736#18167#0" expanded="false" />
+            <element signature="e#18221#19129#0" expanded="false" />
+            <element signature="e#19193#24218#0" expanded="false" />
+            <element signature="e#24298#24572#0" expanded="false" />
+            <element signature="e#24613#25135#0" expanded="false" />
+            <element signature="e#25230#26634#0" expanded="false" />
+            <element signature="e#26678#26862#0" expanded="false" />
+            <element signature="e#26981#27835#0" expanded="false" />
+            <element signature="e#27887#28408#0" expanded="false" />
+            <element signature="e#28460#28843#0" expanded="false" />
+            <marker date="1545384580227" expanded="true" signature="303:884" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="953:1129" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="1194:1907" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="1973:2510" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="2575:2882" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="2948:3277" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="3342:3713" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="4075:4218" ph="select post_... recentpost_info" />
+            <marker date="1545384580227" expanded="true" signature="4163:4216" ph="select UNIX_... recentpost_info" />
+            <marker date="1545384580227" expanded="true" signature="4284:4332" ph="update on re... " />
+            <marker date="1545384580227" expanded="true" signature="4776:5052" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="5324:5600" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="5907:6380" ph="select user_... user_info" />
+            <marker date="1545384580227" expanded="true" signature="6447:6961" ph="select user_... user_info" />
+            <marker date="1545384580227" expanded="true" signature="6711:6768" ph="SELECT post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="7783:7812" ph="select count... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="7974:8502" ph="select secti... post_info" />
+            <marker date="1545384580227" expanded="true" signature="8668:8701" ph="insert into hottest... " />
+            <marker date="1545384580227" expanded="true" signature="8846:9001" ph="select disti... hottest" />
+            <marker date="1545384580227" expanded="true" signature="9309:9338" ph="select count... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="9509:9548" ph="select avg(c... post_info" />
+            <marker date="1545384580227" expanded="true" signature="9679:9796" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="10431:10624" ph="select accou... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="10520:10577" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="10958:11031" ph="insert into user_tmp... " />
+            <marker date="1545384580227" expanded="true" signature="11184:11273" ph="select avg(c... user_tmp" />
+            <marker date="1545384580227" expanded="true" signature="11426:11509" ph="update user_... " />
+            <marker date="1545384580227" expanded="true" signature="11674:11756" ph="select * fro... user_tmp" />
+            <marker date="1545384580227" expanded="true" signature="12095:12210" ph="select accou... post_info" />
+            <marker date="1545384580227" expanded="true" signature="12234:12349" ph="select accou... post_info" />
+            <marker date="1545384580227" expanded="true" signature="12842:12873" ph="insert into usera... " />
+            <marker date="1545384580227" expanded="true" signature="13043:13074" ph="insert into userb... " />
+            <marker date="1545384580227" expanded="true" signature="13174:13257" ph="select * fro... usera" />
+            <marker date="1545384580227" expanded="true" signature="13694:13759" ph="select birth... user_info" />
+            <marker date="1545384580227" expanded="true" signature="14321:14482" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="14612:14775" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="15196:15247" ph="select count... user_info" />
+            <marker date="1545384580227" expanded="true" signature="15492:15660" ph="insert into user_info... " />
+            <marker date="1545384580227" expanded="true" signature="15996:16047" ph="select count... user_info" />
+            <marker date="1545384580227" expanded="true" signature="16467:16511" ph="select * fro... user_info" />
+            <marker date="1545384580227" expanded="true" signature="16728:16788" ph="select secti... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="16982:17036" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="16982:17038" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17349:17517" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17349:17575" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17762:18057" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18244:18315" ph="select reply... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18465:18552" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="18664:18720" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18664:18722" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18867:18923" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="18867:18963" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="19330:19477" ph="insert into user_info... " />
+            <marker date="1545384580227" expanded="true" signature="20377:20440" ph="insert into sec_info... " />
+            <marker date="1545384580227" expanded="true" signature="20708:20926" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="20957:21111" ph="insert into reply_info... " />
+            <marker date="1545384580227" expanded="true" signature="23780:23847" ph="UPDATE post_... " />
+            <marker date="1545384580227" expanded="true" signature="24320:24496" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="24384:24482" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="24640:24802" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="24700:24788" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="24851:25015" ph="update reply... " />
+            <marker date="1545384580227" expanded="true" signature="24912:25001" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="25253:25317" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="25253:25319" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="25468:25531" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="25669:25843" ph="insert into reply_info... " />
+            <marker date="1545384580227" expanded="true" signature="26021:26110" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26021:26112" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26219:26290" ph="select reply... post_info" />
+            <marker date="1545384580227" expanded="true" signature="26440:26527" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26700:26722" ph="select * fro... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="27004:27034" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="27167:27230" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="27368:27536" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="27368:27611" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="27909:28179" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="27909:28237" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="28482:28652" ph="select accou... user_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml_generate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#11#50#0" expanded="true" />
+            <element signature="e#103#314#0" expanded="false" />
+            <element signature="e#388#3301#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2904">
+          <caret line="215" column="57" lean-forward="true" selection-start-line="215" selection-start-column="57" selection-end-line="215" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#104#246#0" expanded="false" />
+            <element signature="e#1549#1597#0" expanded="false" />
+            <element signature="e#1653#1766#0" expanded="false" />
+            <element signature="e#1816#1892#0" expanded="false" />
+            <element signature="e#2606#2688#0" expanded="false" />
+            <element signature="e#3837#4020#0" expanded="false" />
+            <element signature="e#4088#4204#0" expanded="false" />
+            <element signature="e#4335#4742#0" expanded="false" />
+            <element signature="e#4808#4934#0" expanded="false" />
+            <element signature="e#5783#5964#0" expanded="false" />
+            <element signature="e#6072#6253#0" expanded="false" />
+            <element signature="e#6353#6761#0" expanded="false" />
+            <element signature="e#6825#7004#0" expanded="false" />
+            <element signature="e#7092#7852#0" expanded="false" />
+            <element signature="e#8388#8885#0" expanded="false" />
+            <element signature="e#8999#9275#0" expanded="false" />
+            <element signature="e#9367#9806#0" expanded="false" />
+            <element signature="e#9835#9917#0" expanded="false" />
+            <element signature="e#9982#10021#0" expanded="false" />
+            <element signature="e#10081#10120#0" expanded="false" />
+            <marker date="1545386171181" expanded="false" signature="1963:2550" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="2764:3763" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="5050:5675" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="7955:8303" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="520" column="23" lean-forward="false" selection-start-line="520" selection-start-column="23" selection-end-line="520" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#197#4685#0" expanded="false" />
+            <element signature="e#4750#5232#0" expanded="false" />
+            <element signature="e#5298#5780#0" expanded="false" />
+            <element signature="e#5898#7422#0" expanded="false" />
+            <element signature="e#7465#9252#0" expanded="false" />
+            <element signature="e#9295#11977#0" expanded="false" />
+            <element signature="e#12031#13582#0" expanded="false" />
+            <element signature="e#13640#15007#0" expanded="false" />
+            <element signature="e#15183#15927#0" expanded="false" />
+            <element signature="e#15983#16410#0" expanded="false" />
+            <element signature="e#16460#16650#0" expanded="false" />
+            <element signature="e#16698#17262#0" expanded="false" />
+            <element signature="e#17327#17696#0" expanded="false" />
+            <element signature="e#17736#18167#0" expanded="false" />
+            <element signature="e#18221#19129#0" expanded="false" />
+            <element signature="e#19193#24218#0" expanded="false" />
+            <element signature="e#24298#24572#0" expanded="false" />
+            <element signature="e#24613#25135#0" expanded="false" />
+            <element signature="e#25230#26634#0" expanded="false" />
+            <element signature="e#26678#26862#0" expanded="false" />
+            <element signature="e#26981#27835#0" expanded="false" />
+            <element signature="e#27887#28408#0" expanded="false" />
+            <element signature="e#28460#28843#0" expanded="false" />
+            <marker date="1545384580227" expanded="true" signature="303:884" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="953:1129" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="1194:1907" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="1973:2510" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="2575:2882" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="2948:3277" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="3342:3713" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="4075:4218" ph="select post_... recentpost_info" />
+            <marker date="1545384580227" expanded="true" signature="4163:4216" ph="select UNIX_... recentpost_info" />
+            <marker date="1545384580227" expanded="true" signature="4284:4332" ph="update on re... " />
+            <marker date="1545384580227" expanded="true" signature="4776:5052" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="5324:5600" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="5907:6380" ph="select user_... user_info" />
+            <marker date="1545384580227" expanded="true" signature="6447:6961" ph="select user_... user_info" />
+            <marker date="1545384580227" expanded="true" signature="6711:6768" ph="SELECT post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="7783:7812" ph="select count... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="7974:8502" ph="select secti... post_info" />
+            <marker date="1545384580227" expanded="true" signature="8668:8701" ph="insert into hottest... " />
+            <marker date="1545384580227" expanded="true" signature="8846:9001" ph="select disti... hottest" />
+            <marker date="1545384580227" expanded="true" signature="9309:9338" ph="select count... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="9509:9548" ph="select avg(c... post_info" />
+            <marker date="1545384580227" expanded="true" signature="9679:9796" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="10431:10624" ph="select accou... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="10520:10577" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="10958:11031" ph="insert into user_tmp... " />
+            <marker date="1545384580227" expanded="true" signature="11184:11273" ph="select avg(c... user_tmp" />
+            <marker date="1545384580227" expanded="true" signature="11426:11509" ph="update user_... " />
+            <marker date="1545384580227" expanded="true" signature="11674:11756" ph="select * fro... user_tmp" />
+            <marker date="1545384580227" expanded="true" signature="12095:12210" ph="select accou... post_info" />
+            <marker date="1545384580227" expanded="true" signature="12234:12349" ph="select accou... post_info" />
+            <marker date="1545384580227" expanded="true" signature="12842:12873" ph="insert into usera... " />
+            <marker date="1545384580227" expanded="true" signature="13043:13074" ph="insert into userb... " />
+            <marker date="1545384580227" expanded="true" signature="13174:13257" ph="select * fro... usera" />
+            <marker date="1545384580227" expanded="true" signature="13694:13759" ph="select birth... user_info" />
+            <marker date="1545384580227" expanded="true" signature="14321:14482" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="14612:14775" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="15196:15247" ph="select count... user_info" />
+            <marker date="1545384580227" expanded="true" signature="15492:15660" ph="insert into user_info... " />
+            <marker date="1545384580227" expanded="true" signature="15996:16047" ph="select count... user_info" />
+            <marker date="1545384580227" expanded="true" signature="16467:16511" ph="select * fro... user_info" />
+            <marker date="1545384580227" expanded="true" signature="16728:16788" ph="select secti... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="16982:17036" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="16982:17038" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17349:17517" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17349:17575" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17762:18057" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18244:18315" ph="select reply... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18465:18552" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="18664:18720" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18664:18722" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18867:18923" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="18867:18963" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="19330:19477" ph="insert into user_info... " />
+            <marker date="1545384580227" expanded="true" signature="20377:20440" ph="insert into sec_info... " />
+            <marker date="1545384580227" expanded="true" signature="20708:20926" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="20957:21111" ph="insert into reply_info... " />
+            <marker date="1545384580227" expanded="true" signature="23780:23847" ph="UPDATE post_... " />
+            <marker date="1545384580227" expanded="true" signature="24320:24496" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="24384:24482" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="24640:24802" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="24700:24788" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="24851:25015" ph="update reply... " />
+            <marker date="1545384580227" expanded="true" signature="24912:25001" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="25253:25317" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="25253:25319" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="25468:25531" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="25669:25843" ph="insert into reply_info... " />
+            <marker date="1545384580227" expanded="true" signature="26021:26110" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26021:26112" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26219:26290" ph="select reply... post_info" />
+            <marker date="1545384580227" expanded="true" signature="26440:26527" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26700:26722" ph="select * fro... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="27004:27034" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="27167:27230" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="27368:27536" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="27368:27611" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="27909:28179" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="27909:28237" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="28482:28652" ph="select accou... user_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml_generate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="112" column="9" lean-forward="false" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+          <folding>
+            <element signature="e#11#50#0" expanded="true" />
+            <element signature="e#103#314#0" expanded="false" />
+            <element signature="e#388#3301#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2136">
+          <caret line="135" column="43" lean-forward="true" selection-start-line="135" selection-start-column="43" selection-end-line="135" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#104#246#0" expanded="false" />
+            <element signature="e#1549#1597#0" expanded="false" />
+            <element signature="e#1653#1766#0" expanded="false" />
+            <element signature="e#1816#1892#0" expanded="false" />
+            <element signature="e#2606#2688#0" expanded="false" />
+            <element signature="e#3837#4020#0" expanded="false" />
+            <element signature="e#4088#4204#0" expanded="false" />
+            <element signature="e#4335#4742#0" expanded="false" />
+            <element signature="e#4808#4934#0" expanded="false" />
+            <element signature="e#5783#5964#0" expanded="false" />
+            <element signature="e#6072#6253#0" expanded="false" />
+            <element signature="e#6353#6761#0" expanded="false" />
+            <element signature="e#6825#7004#0" expanded="false" />
+            <element signature="e#7092#7852#0" expanded="false" />
+            <element signature="e#8388#8885#0" expanded="false" />
+            <element signature="e#8999#9275#0" expanded="false" />
+            <element signature="e#9367#9806#0" expanded="false" />
+            <element signature="e#9835#9917#0" expanded="false" />
+            <element signature="e#9982#10021#0" expanded="false" />
+            <element signature="e#10081#10120#0" expanded="false" />
+            <marker date="1545386171181" expanded="false" signature="1963:2550" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="2764:3763" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="5050:5675" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="7955:8303" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#197#4685#0" expanded="false" />
+            <element signature="e#4750#5232#0" expanded="false" />
+            <element signature="e#5298#5780#0" expanded="false" />
+            <element signature="e#5898#7422#0" expanded="false" />
+            <element signature="e#7465#9252#0" expanded="false" />
+            <element signature="e#9295#11977#0" expanded="false" />
+            <element signature="e#12031#13582#0" expanded="false" />
+            <element signature="e#13640#15007#0" expanded="false" />
+            <element signature="e#15183#15927#0" expanded="false" />
+            <element signature="e#15983#16410#0" expanded="false" />
+            <element signature="e#16460#16650#0" expanded="false" />
+            <element signature="e#16698#17262#0" expanded="false" />
+            <element signature="e#17327#17696#0" expanded="false" />
+            <element signature="e#17736#18167#0" expanded="false" />
+            <element signature="e#18221#19129#0" expanded="false" />
+            <element signature="e#19193#24218#0" expanded="false" />
+            <element signature="e#24298#24572#0" expanded="false" />
+            <element signature="e#24613#25135#0" expanded="false" />
+            <element signature="e#25230#26634#0" expanded="false" />
+            <element signature="e#26678#26862#0" expanded="false" />
+            <element signature="e#26981#27835#0" expanded="false" />
+            <element signature="e#27887#28408#0" expanded="false" />
+            <element signature="e#28460#28843#0" expanded="false" />
+            <marker date="1545384580227" expanded="true" signature="303:884" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="953:1129" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="1194:1907" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="1973:2510" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="2575:2882" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="2948:3277" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="3342:3713" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="4075:4218" ph="select post_... recentpost_info" />
+            <marker date="1545384580227" expanded="true" signature="4163:4216" ph="select UNIX_... recentpost_info" />
+            <marker date="1545384580227" expanded="true" signature="4284:4332" ph="update on re... " />
+            <marker date="1545384580227" expanded="true" signature="4776:5052" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="5324:5600" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="5907:6380" ph="select user_... user_info" />
+            <marker date="1545384580227" expanded="true" signature="6447:6961" ph="select user_... user_info" />
+            <marker date="1545384580227" expanded="true" signature="6711:6768" ph="SELECT post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="7783:7812" ph="select count... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="7974:8502" ph="select secti... post_info" />
+            <marker date="1545384580227" expanded="true" signature="8668:8701" ph="insert into hottest... " />
+            <marker date="1545384580227" expanded="true" signature="8846:9001" ph="select disti... hottest" />
+            <marker date="1545384580227" expanded="true" signature="9309:9338" ph="select count... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="9509:9548" ph="select avg(c... post_info" />
+            <marker date="1545384580227" expanded="true" signature="9679:9796" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="10431:10624" ph="select accou... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="10520:10577" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="10958:11031" ph="insert into user_tmp... " />
+            <marker date="1545384580227" expanded="true" signature="11184:11273" ph="select avg(c... user_tmp" />
+            <marker date="1545384580227" expanded="true" signature="11426:11509" ph="update user_... " />
+            <marker date="1545384580227" expanded="true" signature="11674:11756" ph="select * fro... user_tmp" />
+            <marker date="1545384580227" expanded="true" signature="12095:12210" ph="select accou... post_info" />
+            <marker date="1545384580227" expanded="true" signature="12234:12349" ph="select accou... post_info" />
+            <marker date="1545384580227" expanded="true" signature="12842:12873" ph="insert into usera... " />
+            <marker date="1545384580227" expanded="true" signature="13043:13074" ph="insert into userb... " />
+            <marker date="1545384580227" expanded="true" signature="13174:13257" ph="select * fro... usera" />
+            <marker date="1545384580227" expanded="true" signature="13694:13759" ph="select birth... user_info" />
+            <marker date="1545384580227" expanded="true" signature="14321:14482" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="14612:14775" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="15196:15247" ph="select count... user_info" />
+            <marker date="1545384580227" expanded="true" signature="15492:15660" ph="insert into user_info... " />
+            <marker date="1545384580227" expanded="true" signature="15996:16047" ph="select count... user_info" />
+            <marker date="1545384580227" expanded="true" signature="16467:16511" ph="select * fro... user_info" />
+            <marker date="1545384580227" expanded="true" signature="16728:16788" ph="select secti... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="16982:17036" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="16982:17038" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17349:17517" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17349:17575" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17762:18057" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18244:18315" ph="select reply... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18465:18552" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="18664:18720" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18664:18722" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18867:18923" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="18867:18963" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="19330:19477" ph="insert into user_info... " />
+            <marker date="1545384580227" expanded="true" signature="20377:20440" ph="insert into sec_info... " />
+            <marker date="1545384580227" expanded="true" signature="20708:20926" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="20957:21111" ph="insert into reply_info... " />
+            <marker date="1545384580227" expanded="true" signature="23780:23847" ph="UPDATE post_... " />
+            <marker date="1545384580227" expanded="true" signature="24320:24496" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="24384:24482" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="24640:24802" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="24700:24788" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="24851:25015" ph="update reply... " />
+            <marker date="1545384580227" expanded="true" signature="24912:25001" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="25253:25317" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="25253:25319" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="25468:25531" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="25669:25843" ph="insert into reply_info... " />
+            <marker date="1545384580227" expanded="true" signature="26021:26110" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26021:26112" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26219:26290" ph="select reply... post_info" />
+            <marker date="1545384580227" expanded="true" signature="26440:26527" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26700:26722" ph="select * fro... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="27004:27034" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="27167:27230" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="27368:27536" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="27368:27611" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="27909:28179" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="27909:28237" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="28482:28652" ph="select accou... user_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2496">
+          <caret line="104" column="37" lean-forward="false" selection-start-line="104" selection-start-column="37" selection-end-line="104" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#104#246#0" expanded="false" />
+            <element signature="e#1549#1597#0" expanded="false" />
+            <element signature="e#1653#1766#0" expanded="false" />
+            <element signature="e#1816#1892#0" expanded="false" />
+            <element signature="e#2606#2688#0" expanded="false" />
+            <element signature="e#3837#4020#0" expanded="false" />
+            <element signature="e#4088#4204#0" expanded="false" />
+            <element signature="e#4335#4742#0" expanded="false" />
+            <element signature="e#4808#4934#0" expanded="false" />
+            <element signature="e#5783#5964#0" expanded="false" />
+            <element signature="e#6072#6253#0" expanded="false" />
+            <element signature="e#6353#6761#0" expanded="false" />
+            <element signature="e#6825#7004#0" expanded="false" />
+            <element signature="e#7092#7852#0" expanded="false" />
+            <element signature="e#8388#8885#0" expanded="false" />
+            <element signature="e#8999#9275#0" expanded="false" />
+            <element signature="e#9367#9806#0" expanded="false" />
+            <element signature="e#9835#9917#0" expanded="false" />
+            <element signature="e#9982#10021#0" expanded="false" />
+            <element signature="e#10081#10120#0" expanded="false" />
+            <marker date="1545386171181" expanded="false" signature="1963:2550" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="2764:3763" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="5050:5675" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="7955:8303" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml_generate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="112" column="9" lean-forward="true" selection-start-line="112" selection-start-column="9" selection-end-line="112" selection-end-column="9" />
+          <folding>
+            <element signature="e#11#50#0" expanded="true" />
+            <element signature="e#103#314#0" expanded="false" />
+            <element signature="e#388#3301#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="450" column="0" lean-forward="false" selection-start-line="450" selection-start-column="0" selection-end-line="450" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#197#4685#0" expanded="false" />
+            <element signature="e#4750#5232#0" expanded="false" />
+            <element signature="e#5298#5780#0" expanded="false" />
+            <element signature="e#5898#7422#0" expanded="false" />
+            <element signature="e#7465#9252#0" expanded="false" />
+            <element signature="e#9295#11977#0" expanded="false" />
+            <element signature="e#12031#13582#0" expanded="false" />
+            <element signature="e#13640#15007#0" expanded="false" />
+            <element signature="e#15183#15927#0" expanded="false" />
+            <element signature="e#15983#16410#0" expanded="false" />
+            <element signature="e#16460#16650#0" expanded="false" />
+            <element signature="e#16698#17262#0" expanded="false" />
+            <element signature="e#17327#17696#0" expanded="false" />
+            <element signature="e#17736#18167#0" expanded="false" />
+            <element signature="e#18221#19129#0" expanded="false" />
+            <element signature="e#19193#24218#0" expanded="false" />
+            <element signature="e#24298#24572#0" expanded="false" />
+            <element signature="e#24613#25135#0" expanded="false" />
+            <element signature="e#25230#26634#0" expanded="false" />
+            <element signature="e#26678#26862#0" expanded="false" />
+            <element signature="e#26981#27835#0" expanded="false" />
+            <element signature="e#27887#28408#0" expanded="false" />
+            <element signature="e#28460#28843#0" expanded="false" />
+            <marker date="1545384580227" expanded="true" signature="303:884" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="953:1129" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="1194:1907" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="1973:2510" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="2575:2882" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="2948:3277" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="3342:3713" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="4075:4218" ph="select post_... recentpost_info" />
+            <marker date="1545384580227" expanded="true" signature="4163:4216" ph="select UNIX_... recentpost_info" />
+            <marker date="1545384580227" expanded="true" signature="4284:4332" ph="update on re... " />
+            <marker date="1545384580227" expanded="true" signature="4776:5052" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="5324:5600" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="5907:6380" ph="select user_... user_info" />
+            <marker date="1545384580227" expanded="true" signature="6447:6961" ph="select user_... user_info" />
+            <marker date="1545384580227" expanded="true" signature="6711:6768" ph="SELECT post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="7783:7812" ph="select count... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="7974:8502" ph="select secti... post_info" />
+            <marker date="1545384580227" expanded="true" signature="8668:8701" ph="insert into hottest... " />
+            <marker date="1545384580227" expanded="true" signature="8846:9001" ph="select disti... hottest" />
+            <marker date="1545384580227" expanded="true" signature="9309:9338" ph="select count... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="9509:9548" ph="select avg(c... post_info" />
+            <marker date="1545384580227" expanded="true" signature="9679:9796" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="10431:10624" ph="select accou... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="10520:10577" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="10958:11031" ph="insert into user_tmp... " />
+            <marker date="1545384580227" expanded="true" signature="11184:11273" ph="select avg(c... user_tmp" />
+            <marker date="1545384580227" expanded="true" signature="11426:11509" ph="update user_... " />
+            <marker date="1545384580227" expanded="true" signature="11674:11756" ph="select * fro... user_tmp" />
+            <marker date="1545384580227" expanded="true" signature="12095:12210" ph="select accou... post_info" />
+            <marker date="1545384580227" expanded="true" signature="12234:12349" ph="select accou... post_info" />
+            <marker date="1545384580227" expanded="true" signature="12842:12873" ph="insert into usera... " />
+            <marker date="1545384580227" expanded="true" signature="13043:13074" ph="insert into userb... " />
+            <marker date="1545384580227" expanded="true" signature="13174:13257" ph="select * fro... usera" />
+            <marker date="1545384580227" expanded="true" signature="13694:13759" ph="select birth... user_info" />
+            <marker date="1545384580227" expanded="true" signature="14321:14482" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="14612:14775" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="15196:15247" ph="select count... user_info" />
+            <marker date="1545384580227" expanded="true" signature="15492:15660" ph="insert into user_info... " />
+            <marker date="1545384580227" expanded="true" signature="15996:16047" ph="select count... user_info" />
+            <marker date="1545384580227" expanded="true" signature="16467:16511" ph="select * fro... user_info" />
+            <marker date="1545384580227" expanded="true" signature="16728:16788" ph="select secti... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="16982:17036" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="16982:17038" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17349:17517" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17349:17575" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17762:18057" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18244:18315" ph="select reply... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18465:18552" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="18664:18720" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18664:18722" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18867:18923" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="18867:18963" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="19330:19477" ph="insert into user_info... " />
+            <marker date="1545384580227" expanded="true" signature="20377:20440" ph="insert into sec_info... " />
+            <marker date="1545384580227" expanded="true" signature="20708:20926" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="20957:21111" ph="insert into reply_info... " />
+            <marker date="1545384580227" expanded="true" signature="23780:23847" ph="UPDATE post_... " />
+            <marker date="1545384580227" expanded="true" signature="24320:24496" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="24384:24482" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="24640:24802" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="24700:24788" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="24851:25015" ph="update reply... " />
+            <marker date="1545384580227" expanded="true" signature="24912:25001" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="25253:25317" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="25253:25319" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="25468:25531" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="25669:25843" ph="insert into reply_info... " />
+            <marker date="1545384580227" expanded="true" signature="26021:26110" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26021:26112" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26219:26290" ph="select reply... post_info" />
+            <marker date="1545384580227" expanded="true" signature="26440:26527" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26700:26722" ph="select * fro... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="27004:27034" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="27167:27230" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="27368:27536" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="27368:27611" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="27909:28179" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="27909:28237" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="28482:28652" ph="select accou... user_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml_generate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="110" column="0" lean-forward="false" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="e#11#50#0" expanded="true" />
+            <element signature="e#103#314#0" expanded="false" />
+            <element signature="e#388#3301#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#104#246#0" expanded="false" />
+            <element signature="e#1549#1597#0" expanded="false" />
+            <element signature="e#1653#1766#0" expanded="false" />
+            <element signature="e#1816#1892#0" expanded="false" />
+            <element signature="e#2606#2688#0" expanded="false" />
+            <element signature="e#3837#4020#0" expanded="false" />
+            <element signature="e#4088#4204#0" expanded="false" />
+            <element signature="e#4335#4742#0" expanded="false" />
+            <element signature="e#4808#4934#0" expanded="false" />
+            <element signature="e#5783#5964#0" expanded="false" />
+            <element signature="e#6072#6253#0" expanded="false" />
+            <element signature="e#6353#6761#0" expanded="false" />
+            <element signature="e#6825#7004#0" expanded="false" />
+            <element signature="e#7092#7852#0" expanded="false" />
+            <element signature="e#8388#8885#0" expanded="false" />
+            <element signature="e#8999#9275#0" expanded="false" />
+            <element signature="e#9367#9806#0" expanded="false" />
+            <element signature="e#9835#9917#0" expanded="false" />
+            <element signature="e#9982#10021#0" expanded="false" />
+            <element signature="e#10081#10120#0" expanded="false" />
+            <marker date="1545386171181" expanded="false" signature="1963:2550" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="2764:3763" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="5050:5675" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="7955:8303" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pymysql/err.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/dbop.py" />
+    <entry file="file://$PROJECT_DIR$/templates/show_section.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/show_click_top10_post.html" />
+    <entry file="file://$PROJECT_DIR$/templates/show_this_post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="65" lean-forward="false" selection-start-line="3" selection-start-column="65" selection-end-line="3" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/conda/conda/envs/sql_env/Lib/site-packages/pymysql/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../作业/模式识别/PCA&amp;LDA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/pymysql/cursors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/faker/providers/lorem/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="155" column="0" lean-forward="false" selection-start-line="155" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#197#4685#0" expanded="false" />
+            <element signature="e#4750#5232#0" expanded="false" />
+            <element signature="e#5298#5780#0" expanded="false" />
+            <element signature="e#5898#7422#0" expanded="false" />
+            <element signature="e#7465#9252#0" expanded="false" />
+            <element signature="e#9295#11977#0" expanded="false" />
+            <element signature="e#12031#13582#0" expanded="false" />
+            <element signature="e#13640#15007#0" expanded="false" />
+            <element signature="e#15183#15927#0" expanded="false" />
+            <element signature="e#15983#16410#0" expanded="false" />
+            <element signature="e#16460#16650#0" expanded="false" />
+            <element signature="e#16698#17262#0" expanded="false" />
+            <element signature="e#17327#17696#0" expanded="false" />
+            <element signature="e#17736#18167#0" expanded="false" />
+            <element signature="e#18221#19129#0" expanded="false" />
+            <element signature="e#19193#24218#0" expanded="false" />
+            <element signature="e#24298#24572#0" expanded="false" />
+            <element signature="e#24613#25135#0" expanded="false" />
+            <element signature="e#25230#26634#0" expanded="false" />
+            <element signature="e#26678#26862#0" expanded="false" />
+            <element signature="e#26981#27835#0" expanded="false" />
+            <element signature="e#27887#28408#0" expanded="false" />
+            <element signature="e#28460#28843#0" expanded="false" />
+            <marker date="1545384580227" expanded="true" signature="303:884" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="953:1129" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="1194:1907" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="1973:2510" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="2575:2882" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="2948:3277" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="3342:3713" ph="create table... if" />
+            <marker date="1545384580227" expanded="true" signature="4075:4218" ph="select post_... recentpost_info" />
+            <marker date="1545384580227" expanded="true" signature="4163:4216" ph="select UNIX_... recentpost_info" />
+            <marker date="1545384580227" expanded="true" signature="4284:4332" ph="update on re... " />
+            <marker date="1545384580227" expanded="true" signature="4776:5052" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="5324:5600" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="5907:6380" ph="select user_... user_info" />
+            <marker date="1545384580227" expanded="true" signature="6447:6961" ph="select user_... user_info" />
+            <marker date="1545384580227" expanded="true" signature="6711:6768" ph="SELECT post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="7783:7812" ph="select count... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="7974:8502" ph="select secti... post_info" />
+            <marker date="1545384580227" expanded="true" signature="8668:8701" ph="insert into hottest... " />
+            <marker date="1545384580227" expanded="true" signature="8846:9001" ph="select disti... hottest" />
+            <marker date="1545384580227" expanded="true" signature="9309:9338" ph="select count... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="9509:9548" ph="select avg(c... post_info" />
+            <marker date="1545384580227" expanded="true" signature="9679:9796" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="10431:10624" ph="select accou... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="10520:10577" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="10958:11031" ph="insert into user_tmp... " />
+            <marker date="1545384580227" expanded="true" signature="11184:11273" ph="select avg(c... user_tmp" />
+            <marker date="1545384580227" expanded="true" signature="11426:11509" ph="update user_... " />
+            <marker date="1545384580227" expanded="true" signature="11674:11756" ph="select * fro... user_tmp" />
+            <marker date="1545384580227" expanded="true" signature="12095:12210" ph="select accou... post_info" />
+            <marker date="1545384580227" expanded="true" signature="12234:12349" ph="select accou... post_info" />
+            <marker date="1545384580227" expanded="true" signature="12842:12873" ph="insert into usera... " />
+            <marker date="1545384580227" expanded="true" signature="13043:13074" ph="insert into userb... " />
+            <marker date="1545384580227" expanded="true" signature="13174:13257" ph="select * fro... usera" />
+            <marker date="1545384580227" expanded="true" signature="13694:13759" ph="select birth... user_info" />
+            <marker date="1545384580227" expanded="true" signature="14321:14482" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="14612:14775" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="15196:15247" ph="select count... user_info" />
+            <marker date="1545384580227" expanded="true" signature="15492:15660" ph="insert into user_info... " />
+            <marker date="1545384580227" expanded="true" signature="15996:16047" ph="select count... user_info" />
+            <marker date="1545384580227" expanded="true" signature="16467:16511" ph="select * fro... user_info" />
+            <marker date="1545384580227" expanded="true" signature="16728:16788" ph="select secti... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="16982:17036" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="16982:17038" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17349:17517" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17349:17575" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="17762:18057" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18244:18315" ph="select reply... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18465:18552" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="18664:18720" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18664:18722" ph="select * fro... post_info" />
+            <marker date="1545384580227" expanded="true" signature="18867:18923" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="18867:18963" ph="select * fro... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="19330:19477" ph="insert into user_info... " />
+            <marker date="1545384580227" expanded="true" signature="20377:20440" ph="insert into sec_info... " />
+            <marker date="1545384580227" expanded="true" signature="20708:20926" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="20957:21111" ph="insert into reply_info... " />
+            <marker date="1545384580227" expanded="true" signature="23780:23847" ph="UPDATE post_... " />
+            <marker date="1545384580227" expanded="true" signature="24320:24496" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="24384:24482" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="24640:24802" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="24700:24788" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="24851:25015" ph="update reply... " />
+            <marker date="1545384580227" expanded="true" signature="24912:25001" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="25253:25317" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="25253:25319" ph="select count... reply_info" />
+            <marker date="1545384580227" expanded="true" signature="25468:25531" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="25669:25843" ph="insert into reply_info... " />
+            <marker date="1545384580227" expanded="true" signature="26021:26110" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26021:26112" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26219:26290" ph="select reply... post_info" />
+            <marker date="1545384580227" expanded="true" signature="26440:26527" ph="update post_... " />
+            <marker date="1545384580227" expanded="true" signature="26700:26722" ph="select * fro... sec_info" />
+            <marker date="1545384580227" expanded="true" signature="27004:27034" ph="select count... post_info" />
+            <marker date="1545384580227" expanded="true" signature="27167:27230" ph="select nickn... user_info" />
+            <marker date="1545384580227" expanded="true" signature="27368:27536" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="27368:27611" ph="insert into post_info... " />
+            <marker date="1545384580227" expanded="true" signature="27909:28179" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="27909:28237" ph="select post_... post_info" />
+            <marker date="1545384580227" expanded="true" signature="28482:28652" ph="select accou... user_info" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bbs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="190" column="9" lean-forward="true" selection-start-line="190" selection-start-column="9" selection-end-line="190" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#104#246#0" expanded="false" />
+            <element signature="e#1549#1597#0" expanded="false" />
+            <element signature="e#1653#1766#0" expanded="false" />
+            <element signature="e#1816#1892#0" expanded="false" />
+            <element signature="e#2606#2688#0" expanded="false" />
+            <element signature="e#3837#4020#0" expanded="false" />
+            <element signature="e#4088#4204#0" expanded="false" />
+            <element signature="e#4335#4742#0" expanded="false" />
+            <element signature="e#4808#4934#0" expanded="false" />
+            <element signature="e#5783#5964#0" expanded="false" />
+            <element signature="e#6072#6253#0" expanded="false" />
+            <element signature="e#6353#6761#0" expanded="false" />
+            <element signature="e#6825#7004#0" expanded="false" />
+            <element signature="e#7092#7852#0" expanded="false" />
+            <element signature="e#8388#8885#0" expanded="false" />
+            <element signature="e#8999#9275#0" expanded="false" />
+            <element signature="e#9367#9806#0" expanded="false" />
+            <element signature="e#9835#9917#0" expanded="false" />
+            <element signature="e#9982#10021#0" expanded="false" />
+            <element signature="e#10081#10120#0" expanded="false" />
+            <marker date="1545386171181" expanded="false" signature="1963:2550" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="2764:3763" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="5050:5675" ph="..." />
+            <marker date="1545386171181" expanded="false" signature="7955:8303" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xml_generate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="108" column="9" lean-forward="true" selection-start-line="108" selection-start-column="9" selection-end-line="108" selection-end-column="9" />
+          <folding>
+            <element signature="e#11#50#0" expanded="true" />
+            <element signature="e#103#314#0" expanded="false" />
+            <element signature="e#388#3301#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,28 @@
+{% extends 'after_layout.html' %}
+{% block title %}个人信息{% endblock %}
+{% block body %}
+    <div class="row justify-content-center">
+        <div class="col">
+            <h1>个人信息</h1>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">表项</th>
+                        <th scope="col">信息</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in content %}
+                        <tr>
+                            <td>{{ item[0] }}</td>
+                            <td>{{ item[1] }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

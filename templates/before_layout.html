@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/site.css') }}"/>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index') }}">嘉然BBS</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="nav nav-tabs">
+                <li><a href="{{ url_for('login') }}">登录</a></li>
+
+                <li><a href="{{ url_for('register') }}">注册</a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<main class="container" role="main">
+    {% block body %}{% endblock %}
+</main>
+
+
+<script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static',filename='js/bootstrap.bundle.js') }}"></script>
+
+</body>
+</html>

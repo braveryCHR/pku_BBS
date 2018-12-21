@@ -1,0 +1,42 @@
+{% extends 'after_layout.html' %}
+{% block title %}{{section_name}}{% endblock %}
+{% block body %}
+    <div class="row justify-content-center">
+        <div class="col">
+            <h1>{{section_number}}:{{section_name}}</h1>
+            <p></p>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">编号</th>
+                        <th scope="col">标题</th>
+                        <th scope="col">作者</th>
+                        <th scope="col">点击数</th>
+                        <th scope="col">回复数</th>
+                        <th scope="col">发表时间</th>
+                        <th scope="col">最后回复</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in content %}
+                        <tr>
+                            <td>{{ item[0]}}</td>
+                            <td>
+                                <a href= "{{url_for('show_this_post',post_number=item[0]) }}">{{item[1]}}</a>
+                
+                            </td>
+                            <td>{{ item[2]}}</td>
+                            <td>{{ item[3]}}</td>
+                            <td>{{ item[4]}}</td>
+                            <td>{{ item[5]}}</td>
+                            <td>{{ item[6]}}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
