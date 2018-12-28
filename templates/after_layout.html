@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}"/>
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+	<!--<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="{{ url_for('static',filename='css/site.css') }}"/>
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script> <!--这个东西原本在底下的-->
 </head>
 <body>
 
@@ -27,7 +30,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="routeVariable">
                         <a class="dropdown-item" href="{{ url_for('show_person_info') }}">个人信息</a>
-                        <a class="dropdown-item" href="#">最近动态</a>
+                        <a class="dropdown-item" href="{{ url_for('show_person_concretinfo_s') }}">最近动态</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -62,6 +65,11 @@
                     <div class="dropdown-menu" aria-labelledby="routeVariable">
                         <a class="dropdown-item" href="{{ url_for('search_post') }}">搜索帖子</a>
                         <a class="dropdown-item" href="{{ url_for('search_user') }}">搜索用户</a>
+						<a class="dropdown-item" href="{{ url_for('search_query_insec') }}">分板块用户检索</a>
+						<a class="dropdown-item" href="{{ url_for('find_hottest_post') }}">寻找各板最热贴及回复人</a>
+						<a class="dropdown-item" href="{{ url_for('find_morethan_avg1') }}">全站大于平均点击数的帖子</a>
+						<a class="dropdown-item" href="{{ url_for('find_morethan_avg2') }}">回复数大于板块平均的用户</a>
+						<a class="dropdown-item" href="{{ url_for('find_post_A_morethan_B') }}">板块间发帖数筛选用户</a>
                     </div>
                 </li>
 
@@ -81,11 +89,13 @@
                         管理
                     </a>
                     <div class="dropdown-menu" aria-labelledby="routeVariable">
-                        <a class="dropdown-item" href="{{ url_for('search_post') }}">版主页面</a>
-                        <a class="dropdown-item" href="{{ url_for('search_user') }}">管理员页面</a>
+                        <a class="dropdown-item" href="{{ url_for('Moderator') }}" >版主页面</a>
+                        <a class="dropdown-item" href="{{ url_for('Admin') }}" >管理员页面</a>
                     </div>
                 </li>
-
+				<li class="nav-item">
+					<a class="nav-link" href="{{ url_for('index') }}">退出</a>
+				</li>
             </ul>
         </div>
     </div>
@@ -103,6 +113,7 @@
 
 <script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
 <script src="{{ url_for('static',filename='js/bootstrap.bundle.js') }}"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -2,7 +2,7 @@
 {% block title %}{{post_title}}{% endblock %}
 {% block body %}
     <center>
-    <div class="jumbotron" style="width:90%">
+    <div class="jumbotron" style="width:90%;word-break:break-all; ">
         <h2 class = "text-success">帖子：{{post_title}}</h2>
         <p></p>
         <p class = "text-primary"> 作者：{{nickname}}  &nbsp 发表时间：{{post_time}} </p>
@@ -22,23 +22,43 @@
             <center><textarea style="width:90%" class="form-control" rows="4" name = "reply_content" placeholder="请文明回复~"  id ="reply_content" ></textarea></center>
         </div> 
         <center><button class="btn btn-success" form="reply_form">提交</button></center>
+		<br>
     </form>
     <p></p>
 <center>
     <ul class="list-group" style="width:80%">
     {% for item in reply_content %}
     <li class="list-group-item" style="word-break:break-all; word-wrap:break-all;" >
-        <h5 class = "text-info">
+        <h5 class = "text-info" id='txtinfo-{{item[1]}}'>
         第{{item[1]}}层 &nbsp
         作者：{{item[3]}}  &nbsp 
         回复时间：{{item[6]}} &nbsp
         点赞数：{{item[7]}} 
         </h5>
         <strong><p class="text-left" class="list-group-item-text" >{{item[5]}}</p></strong>
-        <button class="btn btn-success">赞一下</button>
-        &nbsp&nbsp&nbsp&nbsp&nbsp
-        <button class="btn btn-warning">踩一下</button>
+        <button class="btn btn-success" type='button' id='btn{{item[1]}}'>赞一下</button>
+		<!--把踩一下删除了-->
+		<a href="{{ url_for('delete_reply',post_number=post_number,floor_number=item[1]) }}" class="btn btn-success">删除</a>
         <p></p>
+		<script>
+			$(document).ready(function(){
+			$("#btn{{item[1]}}").click(function(){
+				var url = '/update_like_num';
+				var lnum = document.getElementById("txtinfo-{{item[1]}}").innerHTML.split("：")[3];
+				$.ajax({
+					url:url,
+					type:'get',
+					data:{'post_number':{{post_number}},
+							'floor_number':{{item[1]}},
+							'like_number':lnum},
+					success:function(data){
+						var t = "第{{item[1]}}层 &nbsp 作者：{{item[3]}}  &nbsp 回复时间：{{item[6]}} &nbsp 点赞数：" + data
+						document.getElementById("txtinfo-{{item[1]}}").innerHTML= t ;
+					}
+				})
+			});
+			});
+		</script>
     </li>
     {% endfor %}
     </ul>

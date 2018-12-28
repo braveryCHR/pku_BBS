@@ -1,0 +1,73 @@
+{% extends 'after_layout.html' %}
+{% block title %}大于平均热度的帖子{% endblock %}
+{% block body %}
+    <div class="row justify-content-center">
+        <div class="col">
+            <div class="table-responsive">
+				<table class="table table-bordered table-hover table-striped">
+					<h2 style="text-align:center">点击数高于全站平均量的帖子</h2>
+                    <thead>
+                    <tr>
+                        <th scope="col">编号</th>
+                        <th scope="col">版块</th>
+						<th scope="col">作者</th>
+                        <th scope="col">标题</th>
+                        <th scope="col">点击数</th>
+						<th scope="col">全站平均点击数</th>
+						{% if uid =='2' %}
+						<th scope="col">操作</th>
+						{% endif %}
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in ret1 %}
+                        <tr>
+                            <td>{{ item[0]}}</td>
+                            <td>{{ item[1]}}</td>
+                            <td>{{ item[2]}}</td>
+                            <td>
+								<a href="{{url_for('show_this_post',post_number=item[0]) }}">{{item[3]}}</a>
+							</td>
+                            <td>{{ item[4]}}</td>
+                            <td>{{ item[5]}}</td>
+							{% if uid =='2' %}
+							{% if item[2]=='无' %}
+							<td>无</td>
+							{% else %}
+							<td>
+								<a href="{{url_for('delete_post',post_number=item[0]) }}">删除</a>
+							</td>
+							{% endif %}
+							{% endif %}
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+				</table>
+            </div>
+        </div>
+    </div>
+	<br>
+	<div class="container">     <!--这个bootstrap4的居中搞不出来了实在-->
+		<ul class="pagination">
+			{%if pnum > 1 %}
+				<li class="page-item"><a class="page-link" href="{{url_for('find_morethan_avg1_parti',pnum = pnum-1)}}">&laquo;</a></li>
+			{%else%}
+				<li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+			{%endif%}
+			{% for t in range(pnum,pnum+10) %}
+				{% if t == pnum %}
+					<li class = "page-item active"><a class="page-link" href="#">{{t}}</a></li>
+				{%elif t>Len %}
+				{%else%}
+					<li "page-item"><a class="page-link" href="{{url_for('find_morethan_avg1_parti',pnum = t)}}">{{t}}</a></li>
+				{%endif%}
+			{% endfor %}
+			{% if Len>pnum %}
+				<li "page-item"><a class="page-link" href="{{url_for('find_morethan_avg1_parti',pnum = pnum+1)}}">&raquo;</a></li>
+			{%else%}
+				<li "page-item"><a class="page-link" href="#">&raquo;</a></li>
+			{%endif%}
+		</ul>
+	</div>
+
+{% endblock %}

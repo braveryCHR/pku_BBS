@@ -1,34 +1,40 @@
 {% extends 'after_layout.html' %}
-{% block title %}搜索用户{% endblock %}
+{% block title %}高级搜索{% endblock %}
 {% block body %}
 
 		<div class="row justify-content-center">
         <div class="col-6">
-            <form id="search_form" action="{{ url_for('search_user_form') }}" method="post" enctype="multipart/form-data">
-                <legend>搜索</legend>
-                <div class="form-group">
-                    <label for="keyWord">账号或昵称的关键词</label>
-                    <input type="text" class="form-control" name="keyWord" id="keyWord"
-                           placeholder="请输入账号或昵称的关键词">
+            <form id="register_form" action="{{ url_for('find_post_A_morethan_B_form') }}" method="post" enctype="multipart/form-data">
+                <legend>高级搜索：寻找板块A发帖多于板块B的用户</legend>
+				<div class="form-group">
+                    <label for="block_chooseA">板块A</label>
+                        <select class="form-control" id="block_chooseA" name="block_chooseA">
+						{% for item in secs %}
+                            <option>{{item[0]}}-{{item[1]}}</option>
+						{% endfor %}
+                        </select>
                 </div>
-                <button class="btn btn-success" form="search_form">提交</button>
+				<div class="form-group">
+                    <label for="block_chooseB">板块B</label>
+                        <select class="form-control" id="block_chooseB" name="block_chooseB">
+						{% for item in secs %}
+                            <option>{{item[0]}}-{{item[1]}}</option>
+						{% endfor %}
+                        </select>
+                </div>
+                <button class="btn btn-success" form="register_form">提交</button>
                 <h1></h1>
                 {{提示|safe}}
             </form>
         </div>
-        <div class="table-responsive">
+		<div class="table-responsive">
                 <table class="table table-bordered table-hover table-striped">
                     <thead>
                     <tr>
                         <th scope="col">账号</th>
-                        <th scope="col">昵称</th>
-                        <th scope="col">生日</th>
-                        <th scope="col">性别</th>
-                        <th scope="col">电子邮件</th>
-                        <th scope="col">等级</th>
-                        <th scope="col">注册时间</th>
-                        <th scope="col">身份</th>
-						{% if uid =='2' %}
+                        <th scope="col">在A版块发帖数</th>
+                        <th scope="col">在B板块发帖数</th>
+						{% if uid == '2' %}   <!--注意是str-->
 						<th scope="col">操作</th>
 						{% endif %}
                     </tr>
@@ -45,11 +51,6 @@
 							{% endif %}
                             <td>{{ item[1]}}</td>
                             <td>{{ item[2]}}</td>
-                            <td>{{ item[3]}}</td>
-                            <td>{{ item[4]}}</td>
-                            <td>{{ item[5]}}</td>
-                            <td>{{ item[6]}}</td>
-                            <td>{{ item[7]}}</td>
 							{% if uid=='2' %}
 							{% if item[0]=='无' %}
 							<td>无</td>

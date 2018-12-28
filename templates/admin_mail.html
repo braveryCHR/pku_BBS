@@ -1,0 +1,42 @@
+{% extends 'after_layout.html' %}
+{% block title %}全部邮件{% endblock %}
+{% block body %}
+    <div class="row justify-content-center">
+        <div class="col">
+            <h1>全部邮件</h1>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">发件人</th>
+                        <th scope="col">内容(单击以标记已读)</th>
+                        <th scope="col">操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in content %}
+                        <tr>
+                            <td>{{ item[0]}}</td>
+                            <td>
+							{% if item[2]==0 %}
+                                <a href="{{ url_for('admin_readmail',tag_time=item[3]) }}" style="color: red">
+								用户：“{{item[1]}}” 10分钟内发帖超过10个，请留意其是否存在灌水行为！
+								</a>
+							{% else %}
+								<a href="#">
+								用户：“{{item[1]}}” 10分钟内发帖超过10个，请留意其是否存在灌水行为！
+								</a>
+							{% endif %}
+                            </td>
+							<td>
+								<a href="{{ url_for('admin_delete_mail',tag_time=item[3] ) }}">删除</a>
+							</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

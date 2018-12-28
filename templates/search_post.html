@@ -28,6 +28,9 @@
                         <th scope="col">回复数</th>
                         <th scope="col">发表时间</th>
                         <th scope="col">最后回复</th>
+						{% if uid =='2' %}
+						<th scope="col">操作</th>
+						{% endif %}
                     </tr>
                     </thead>
                     <tbody>
@@ -35,14 +38,27 @@
                         <tr>
                             <td>{{ item[0]}}</td>
                             <td>{{ item[1]}}</td>
-                            <td>
+							{% if item[2]=='无' %}
+							<td>{{ item[2]}}</td>
+							{% else %}
+							<td>
                                 <a href="{{url_for('show_this_post',post_number=item[0]) }}">{{item[2]}}</a>
-                            </td>
+							</td>
+							{% endif%}
                             <td>{{ item[3]}}</td>
                             <td>{{ item[4]}}</td>
                             <td>{{ item[5]}}</td>
                             <td>{{ item[6]}}</td>
                             <td>{{ item[7]}}</td>
+							{% if uid =='2' %}
+							{% if item[2]=='无' %}
+							<td>无</td>
+							{% else %}
+							<td>
+								<a href="{{url_for('delete_post',post_number=item[0]) }}">删除</a>
+							</td>
+							{% endif %}
+							{% endif %}
                         </tr>
                     {% endfor %}
                     </tbody>

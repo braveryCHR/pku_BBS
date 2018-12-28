@@ -1,0 +1,21 @@
+{% extends 'after_layout.html' %}
+{% block title %}版主{% endblock %}
+{% block body %}
+<h1>修改板块名称</h1>
+    <div class="row justify-content-center">
+            <div class="col-6">
+            <form id="search_form" action="{{ url_for('change_name_dbop',section_number=section_number) }}" method="post" enctype="multipart/form-data">
+                <!--<legend>修改板块名称</legend>-->
+                <div class="form-group">
+                    <label for="keyWord">新的板块名称</label>
+                    <input type="text" class="form-control" name="keyWord" id="keyWord"
+                           placeholder="请输入新的板块名称">
+                </div>
+                <button class="btn btn-success" form="search_form">提交</button>
+                <h1></h1>
+                {{提示|safe}}
+            </form>
+			</div>
+    </div>
+
+{% endblock %}

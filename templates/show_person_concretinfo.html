@@ -1,0 +1,87 @@
+{% extends 'after_layout.html' %}
+{% block title %}个人信息{% endblock %}
+{% block body %}
+    <div class="row justify-content-center">
+        <div class="col">
+            <h1>用户： {{account}} </h1>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+					<h2 style="text-align:center">个人基本信息</h2>
+					<thead>
+                    <tr>
+                        <th scope="col">性别</th>
+                        <th scope="col">年龄</th>
+						<th scope="col">等级</th>
+                        <th scope="col">生日</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+					{%if bs[0]=='0' %}
+                        <td>男</td>
+					{% else %}
+						<td>女</td>
+					{% endif %}
+                        <td>{{ bs[1]}}</td>
+                        <td>{{ bs[2]}}</td>
+                        <td>{{ bs[3]}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+				<table class="table table-bordered table-hover table-striped">
+					<h2 style="text-align:center">个人最近10天发帖信息</h2>
+                    <thead>
+                    <tr>
+                        <th scope="col">编号</th>
+                        <th scope="col">版块</th>
+						<th scope="col">作者</th>
+                        <th scope="col">标题</th>
+                        <th scope="col">点击数</th>
+                        <th scope="col">回复数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in ps %}
+                        <tr>
+                            <td>
+								<a href="{{url_for('show_this_post',post_number=item[0]) }}">{{item[0]}}</a>
+							</td>
+                            <td>{{ item[1]}}</td>
+                            <td>{{ item[2]}}</td>
+                            <td>{{ item[3]}}</td>
+                            <td>{{ item[5]}}</td>
+                            <td>{{ item[6]}}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+				</table>
+				<table class="table table-bordered table-hover table-striped">
+					<h2 style="text-align:center">个人最近10天回帖信息</h2>
+                    <thead>
+                    <tr>
+                        <th scope="col">帖号</th>
+                        <th scope="col">层数</th>
+                        <th scope="col">回帖人</th>
+                        <th scope="col">回帖时间</th>
+                        <th scope="col">赞数</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in rs %}
+                        <tr>
+                            <td>
+								<a href="{{url_for('show_this_post',post_number=item[0]) }}">{{item[0]}}</a>
+							</td>
+                            <td>{{ item[1]}}</td>
+                            <td>{{ item[2]}}</td>
+                            <td>{{ item[4]}}</td>
+                            <td>{{ item[5]}}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+				</table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

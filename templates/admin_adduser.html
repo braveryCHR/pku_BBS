@@ -1,0 +1,80 @@
+{% extends 'after_layout.html' %}
+{% block title %}添加用户{% endblock %}
+{% block body %}
+		<script>
+			function HideBtn(Btn){
+				var t =document.getElementById("block_choose");
+					if(Btn.value != '1'){
+						t.style.display = "none";
+					}
+					else{
+						t.style.display = "";
+					}
+			}
+		</script>
+		<div class="row justify-content-center">
+        <div class="col-6">
+            <form id="adduser_form" action="{{ url_for('admin_adduer_form') }}" method="post" enctype="multipart/form-data">
+                <legend>用户添加</legend>
+                <div class="form-group">
+                    <label for="account">账号</label>
+                    <input type="text" class="form-control" name="account" id="account"
+                           placeholder="请输入账号">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">密码</label>
+                    <input type="password" class="form-control" name="password" id="password"
+                           placeholder="请输入密码">
+                </div>
+
+                <div class="form-group">
+                    <label for="nickname">昵称</label>
+                    <input type="text" class="form-control" name="nickname" id="nickname"
+                           placeholder="请输入昵称">
+                </div>
+                
+                <div class="form-group">
+                    <label for="birthday">生日</label>
+                    <input type="date" class="form-control" name="birthday" id="birthday"
+                           placeholder="请输入生日">
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">性别</label>
+                        <select class="form-control" id = "gender" name = "gender">
+                            <option>男生</option>
+                            <option>女生</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="text" class="form-control" name="email" id="email"
+                           placeholder="请输入您的邮箱">
+                </div>
+				<div class="form-group">
+                    <label for="identity">身份</label>
+                        <select class="form-control" id = "identity" name = "identity" onchange='HideBtn(this);'>
+                            <option value="1">版主</option>
+                            <option value="0">普通用户</option>
+							<option value="2">管理员</option>
+                        </select>
+                </div>
+				<div class="form-group" id = "block_choose" name = "block_choose">
+                    <label for="adminsec">板块</label>
+                        <select class="form-control" id="adminsec" name="adminsec">
+						{% for item in secs %}
+                            <option>{{item[0]}}-{{item[1]}}</option>
+						{% endfor %}
+                        </select>
+                </div>
+
+                <button class="btn btn-success" form="adduser_form">提交</button>
+                <h1></h1>
+                {{提示|safe}}
+            </form>
+        </div>
+    </div>
+</html>
+{% endblock %}

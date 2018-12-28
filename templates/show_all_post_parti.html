@@ -1,44 +1,36 @@
 {% extends 'after_layout.html' %}
-{% block title %}{{section_name}}{% endblock %}
+{% block title %}全部帖子{% endblock %}
 {% block body %}
     <div class="row justify-content-center">
         <div class="col">
-            <h1>{{section_number}}:{{section_name}}</h1>
-            <p></p>
+            <h1>全部帖子</h1>
             <div class="table-responsive">
                 <table class="table table-bordered table-hover table-striped">
                     <thead>
                     <tr>
                         <th scope="col">编号</th>
+                        <th scope="col">版块</th>
                         <th scope="col">标题</th>
                         <th scope="col">作者</th>
                         <th scope="col">点击数</th>
                         <th scope="col">回复数</th>
                         <th scope="col">发表时间</th>
                         <th scope="col">最后回复</th>
-						{% if mode_sec == "-2" or mode_sec == section_number %}
-							<th scope="col">操作</th>
-						{% endif %}
                     </tr>
                     </thead>
                     <tbody>
                     {% for item in content %}
                         <tr>
                             <td>{{ item[0]}}</td>
+                            <td>{{ item[1]}}</td>
                             <td>
-                                <a href= "{{url_for('show_this_post',post_number=item[0]) }}">{{item[1]}}</a>
-                
+                                <a href="{{url_for('show_this_post',post_number=item[0]) }}">{{item[2]}}</a>
                             </td>
-                            <td>{{ item[2]}}</td>
                             <td>{{ item[3]}}</td>
                             <td>{{ item[4]}}</td>
                             <td>{{ item[5]}}</td>
                             <td>{{ item[6]}}</td>
-							{% if mode_sec == "-2" or mode_sec == section_number %}
-							<td>
-								<a href= "{{url_for('delete_post',post_number=item[0]) }}">删除</a>
-							</td>
-						{% endif %}
+                            <td>{{ item[7]}}</td>
                         </tr>
                     {% endfor %}
                     </tbody>
@@ -49,7 +41,7 @@
 	<div class="container">     <!--这个bootstrap4的居中搞不出来了实在-->
 		<ul class="pagination">
 			{%if pnum > 1 %}
-				<li class="page-item"><a class="page-link" href="{{url_for('show_this_section_parti',section_number=section_number,section_name=section_name,pnum = pnum-1)}}">&laquo;</a></li>
+				<li class="page-item"><a class="page-link" href="{{url_for('show_all_post_parti',pnum = pnum-1)}}">&laquo;</a></li>
 			{%else%}
 				<li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
 			{%endif%}
@@ -58,11 +50,11 @@
 					<li class = "page-item active"><a class="page-link" href="#">{{t}}</a></li>
 				{%elif t>Len %}
 				{%else%}
-					<li "page-item"><a class="page-link" href="{{url_for('show_this_section_parti',section_number=section_number,section_name=section_name,pnum =t)}}">{{t}}</a></li>
+					<li "page-item"><a class="page-link" href="{{url_for('show_all_post_parti',pnum = t)}}">{{t}}</a></li>
 				{%endif%}
 			{% endfor %}
 			{% if Len>pnum %}
-				<li "page-item"><a class="page-link" href="{{url_for('show_this_section_parti',section_number=section_number,section_name=section_name,pnum = pnum+1)}}">&raquo;</a></li>
+				<li "page-item"><a class="page-link" href="{{url_for('show_all_post_parti',pnum = pnum+1)}}">&raquo;</a></li>
 			{%else%}
 				<li "page-item"><a class="page-link" href="#">&raquo;</a></li>
 			{%endif%}

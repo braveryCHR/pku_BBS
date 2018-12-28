@@ -1,3 +1,8 @@
+#coding=utf-8
+import numpy as np
+import pandas as pd
+from datetime import datetime
+import xml_parser
 #改一下主函数函数名
 from xml.etree import ElementTree as ET
 from xml.dom import minidom
@@ -100,10 +105,11 @@ def generate_user_records(Username_p,BasicInfo_p,Posts_p,Replies_p):
 
     newstr = prettify(User)
     #在apache启动下，文件在apache根目录中
-    file = open("user_ConcretInfo.xml","wb+")
+    fpath ='user_ConcretInfo.xml'
+    file = open(fpath,"wb+")
     file.write(newstr)
     file.close()
-
+    return fpath
 
 if __name__ =="__main__":
     a = 1

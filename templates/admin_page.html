@@ -1,0 +1,42 @@
+{% extends 'after_layout.html' %}
+{% block title %}管理员{% endblock %}
+{% block body %}
+    <div class="row justify-content-center">
+        <div class="col">
+            <h1>您好，管理员</h1>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">功能</th>
+                        <th scope="col">进入</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>增加用户</td>
+                            <td>
+								<a href="{{ url_for('admin_adduser') }}">进入</a>
+							</td>
+                        </tr>
+						<tr>
+                            <td>邮箱</td>
+							{% if read_tag==0 %}
+                            <td>
+								<a href="{{ url_for('admin_mailbox') }}">进入</a>
+							</td>
+							{% else %}
+							<td>
+								<a href="{{ url_for('admin_mailbox') }}" style="color: red">进入(有新的消息)</a>
+							</td>
+							{% endif %}
+                        </tr>
+                    </tbody>
+                </table>
+				<h1></h1>
+				{{提示|safe}}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

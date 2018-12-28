@@ -1,22 +1,32 @@
 {% extends 'after_layout.html' %}
-{% block title %}搜索用户{% endblock %}
+{% block title %}高级搜索{% endblock %}
 {% block body %}
 
 		<div class="row justify-content-center">
         <div class="col-6">
-            <form id="search_form" action="{{ url_for('search_user_form') }}" method="post" enctype="multipart/form-data">
-                <legend>搜索</legend>
+            <form id="register_form" action="{{ url_for('search_query_insec_form') }}" method="post" enctype="multipart/form-data">
+                <legend>高级搜索：板块内用户信息查询</legend>
                 <div class="form-group">
-                    <label for="keyWord">账号或昵称的关键词</label>
-                    <input type="text" class="form-control" name="keyWord" id="keyWord"
-                           placeholder="请输入账号或昵称的关键词">
+                    <label for="sort_method">排序方式</label>
+                        <select class="form-control" id = "sort_method" name = "sort_method">
+                            <option value="0">1:发帖总数降序</option>
+                            <option value="1">2:回帖总数降序</option>
+                        </select>
                 </div>
-                <button class="btn btn-success" form="search_form">提交</button>
+				<div class="form-group">
+                    <label for="block_choose">板块</label>
+                        <select class="form-control" id="block_choose" name="block_choose">
+						{% for item in secs %}
+                            <option>{{item[0]}}-{{item[1]}}</option>
+						{% endfor %}
+                        </select>
+                </div>
+                <button class="btn btn-success" form="register_form">提交</button>
                 <h1></h1>
                 {{提示|safe}}
             </form>
         </div>
-        <div class="table-responsive">
+		<div class="table-responsive">
                 <table class="table table-bordered table-hover table-striped">
                     <thead>
                     <tr>
@@ -27,8 +37,8 @@
                         <th scope="col">电子邮件</th>
                         <th scope="col">等级</th>
                         <th scope="col">注册时间</th>
-                        <th scope="col">身份</th>
-						{% if uid =='2' %}
+                        <th scope="col">发帖/回帖总数</th>
+						{% if mode_sec == "-2" or mode_sec == res_sec %}   <!--注意是str-->
 						<th scope="col">操作</th>
 						{% endif %}
                     </tr>
@@ -50,7 +60,7 @@
                             <td>{{ item[5]}}</td>
                             <td>{{ item[6]}}</td>
                             <td>{{ item[7]}}</td>
-							{% if uid=='2' %}
+							{% if mode_sec == "-2" or mode_sec == res_sec %}
 							{% if item[0]=='无' %}
 							<td>无</td>
 							{% else %}

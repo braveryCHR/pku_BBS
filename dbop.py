@@ -4,6 +4,7 @@ import string
 from datetime import datetime
 from xml_generate import generate_user_records
 from faker import Faker
+from datetime import datetime
 
 
 class DB:
@@ -48,9 +49,9 @@ class DB:
             last_reply_time  DATETIME,
             last_reply_account VARCHAR(20),
             PRIMARY KEY(post_number),
-            FOREIGN KEY(section_number) REFERENCES sec_info(section_number),
-            FOREIGN KEY(account) REFERENCES user_info(account),
-            FOREIGN KEY(last_reply_account) REFERENCES user_info(account)
+            FOREIGN KEY(section_number) REFERENCES sec_info(section_number) on DELETE CASCADE on UPDATE CASCADE,
+            FOREIGN KEY(account) REFERENCES user_info(account) on DELETE CASCADE on UPDATE CASCADE,
+            FOREIGN KEY(last_reply_account) REFERENCES user_info(account) on DELETE CASCADE on UPDATE CASCADE
         )
         '''
 
@@ -65,8 +66,8 @@ class DB:
             reply_time  DATETIME not null,
             like_num  INT,
             PRIMARY KEY(post_number,reply_floor),
-            FOREIGN KEY(post_number) REFERENCES post_info(post_number),
-            FOREIGN KEY(account) REFERENCES user_info(account)
+            FOREIGN KEY(post_number) REFERENCES post_info(post_number) on DELETE CASCADE on UPDATE CASCADE,
+            FOREIGN KEY(account) REFERENCES user_info(account) on DELETE CASCADE on UPDATE CASCADE
         )
         '''
         self.cursor.execute(sql4)
@@ -74,55 +75,48 @@ class DB:
             section_number INT,
             account VARCHAR (20),
             PRIMARY KEY(section_number,account),
-            FOREIGN KEY(section_number) REFERENCES sec_info(section_number),
-            FOREIGN KEY(account) REFERENCES user_info(account)
+            FOREIGN KEY(section_number) REFERENCES sec_info(section_number)on DELETE CASCADE on UPDATE CASCADE,
+            FOREIGN KEY(account) REFERENCES user_info(account)on DELETE CASCADE on UPDATE CASCADE
         ) 
         '''
         self.cursor.execute(sql5)
-        sql6 = '''create table if not exists recentpost_info(
-            account VARCHAR (20),
-            post_number INT,
-            post_time DATETIME,
-            PRIMARY KEY(account,post_number),
-            FOREIGN KEY(account) REFERENCES user_info(account),
-            FOREIGN KEY(post_number) REFERENCES post_info(post_number)
+     #   sql6 = '''create table if not exists recentpost_info(
+     #       account VARCHAR (20),
+     #       post_number INT,
+     #       post_time DATETIME,
+     #       PRIMARY KEY(account,post_number),
+     #       FOREIGN KEY(account) REFERENCES user_info(account)on DELETE CASCADE on UPDATE CASCADE,
+     #       FOREIGN KEY(post_number) REFERENCES post_info(post_number)on DELETE CASCADE on UPDATE CASCADE
+     #   )
+      #  '''
+        #为了实现触发器，增加管理员信箱
+        sql8 = '''create table if not exists dba_mailbox(
+        sender VARCHAR(20),
+        content text,
+        if_read SMALLINT,
+        tag_time datetime,
+        check(if_read = 0 or if_read = 1)
         )
         '''
-        self.cursor.execute(sql6)
-        sql7 = '''create table if not exists recentreply_info(
-            account VARCHAR(20),
-            post_number INT,
-            reply_floor INT,
-            reply_time DATETIME,
-            PRIMARY KEY(account,post_number,reply_floor),
-            FOREIGN KEY(account) REFERENCES user_info(account),
-            FOREIGN KEY(post_number) REFERENCES post_info(post_number)
-        )
-        '''
-        self.cursor.execute(sql7)
-        # 为了实现触发器，增加管理员信箱
-        # sql8 = '''create table if not exists dba_mailbox(
-        # sender VARCHAR(20),
-        # content text
-        # if_read SMALLINT
-        # check(if_read = 0 or if_read = 1)
-        # )
-        # '''
-        # self.cursor.execute(sql8)
+        self.cursor.execute(sql8)
         # 创建触发器 语法检查ok
-        sql_91 = '''select post_time from recentpost_info where (
-        UNIX_TIMESTAMP(post_time) <= all (select UNIX_TIMESTAMP(post_time) from recentpost_info))
-        '''
-        sql9 = "create trigger warn_WaterUser before update on recentpost_info \
-        for each row \
-        BEGIN \
-        if ((select count(*) from recentpost_info where account = new.account) = 10 \
-        and (TIMESTAMPDIFF(MINUTE,%s,new.post_time)<=10)) \
-        THEN \
-          insert into dba_mailbox values('systems','user: ' + str(new.account) +'many be a water user'); \
-             end if;   \
-        END " % \
-               (sql_91)
+        sql9 = '''create trigger warn_WaterUser after insert on post_info 
+        for each row 
+        BEGIN 
+        DECLARE countt INT;
+        set countt=(select count(*) from post_info WHERE (
+        TIMESTAMPDIFF(MINUTE,post_time,new.post_time)<=10));
+        if (countt>10)
+        THEN
+          insert into dba_mailbox(sender,content,if_read,tag_time) values('systems',new.account,0,new.post_time); 
+             end if;   
+        END '''
+
+        sql_d = "DROP TRIGGER IF EXISTS warn_WaterUser;"
+        self.cursor.execute(sql_d)
+        self.database.commit()
+        self.cursor.execute(sql9)
+        self.database.commit()
 
     def query_top10_clicktimes(self):  # 找出全站点击数前10的帖子
         sql = '''
@@ -158,7 +152,7 @@ class DB:
         sql_1 = "select user_info.account,user_info.nickname,user_info.birthday,\
         user_info.gender,user_info.email,user_info.ulevel,user_info.join_date, \
         count(post_info.post_number) as count_post from user_info NATURAL INNER JOIN post_info\
-        WHERE post_info.section_number = %s\
+        WHERE post_info.section_number = '%s'\
         GROUP BY user_info.account,user_info.nickname,user_info.birthday,\
         user_info.gender,user_info.email,user_info.ulevel,user_info.join_date\
         ORDER BY count_post DESC " % \
@@ -167,7 +161,7 @@ class DB:
         sql_2 = "select user_info.account,user_info.nickname,user_info.birthday,\
         user_info.gender,user_info.email,user_info.ulevel,user_info.join_date,\
         count(*) as count_reply from user_info NATURAL INNER JOIN reply_info\
-        WHERE reply_info.post_number IN (SELECT post_number from post_info WHERE section_number = %s)\
+        WHERE reply_info.post_number IN (SELECT post_number from post_info WHERE section_number = '%s')\
         GROUP BY  user_info.account,user_info.nickname,user_info.birthday,\
         user_info.gender,user_info.email,user_info.ulevel,user_info.join_date\
         ORDER BY count_reply DESC" % \
@@ -176,6 +170,7 @@ class DB:
         if sort_method == 0:
             try:
                 self.cursor.execute(sql_1)
+                self.database.commit()
             except:
                 self.database.rollback()
             ret = self.cursor.fetchall()
@@ -183,6 +178,7 @@ class DB:
         else:
             try:
                 self.cursor.execute(sql_2)
+                self.database.commit()
             except:
                 self.database.rollback()
             ret = self.cursor.fetchall()
@@ -214,7 +210,7 @@ class DB:
         ORDER BY dy DESC,dm DESC,dd DESC, dh DESC,di DESC,ds DESC " % \
                    (i)  # 按照热度也就是时间差排序
             self.cursor.execute(sql2)
-            ins_tmp = self.cursor.fetchone()  # 拿出时间差最长的那个
+            ins_tmp = self.cursor.fetchone()  # 拿出时间差最长的那个也就是热度最高的帖子
             sql_ins = "insert into hottest values(%s,%s)" % \
                       ins_tmp[0:2]  # 插入临时表
             self.cursor.execute(sql_ins)
@@ -241,8 +237,9 @@ class DB:
         self.cursor.execute(sql_avgclick)
         avgc = [self.cursor.fetchone()[0]]
         avgct = tuple(avgc)
-        sql1 = "select * from post_info where(\
-                    click_number > %s) order BY  section_number ASC,click_number DESC" % \
+        sql1 = "select post_number,section_number,account,post_title,click_number \
+                 from post_info where( click_number > %s)  \
+               order BY  section_number ASC,click_number DESC" % \
                (avgc[0])
         self.cursor.execute(sql1)
         ret10 = self.cursor.fetchall()  # >avg的帖子
@@ -292,7 +289,8 @@ class DB:
             self.cursor.execute(sql_upd)
             self.database.commit()
         # 最后找出回复数大于该板块平均回复数的
-        sql2 = "select * from user_tmp NATURAL INNER JOIN user_info  where count_reply > avg_reply"
+        sql2 = "select section_number,account,nickname,count_reply,avg_reply  \
+               from user_tmp NATURAL INNER JOIN user_info  where count_reply > avg_reply"
         self.cursor.execute(sql2)
         ret2 = self.cursor.fetchall()
         sql3 = "DROP TEMPORARY TABLE IF EXISTS user_tmp"
@@ -502,6 +500,7 @@ class DB:
         init_acc = 'account_'
         init_nic = 'nickname_'
         in_arr = []
+        in_arr_mod = []
         for i in range(200):
             randpwd = random.randint(100000, 999999)
             randpwd = str(randpwd)
@@ -515,8 +514,14 @@ class DB:
             in_arr.append(
                 (init_acc + str(i), fake.name(), randpwd, dtime2.format(Y1, M1, D1), gd, ulevel,
                  fake.email(), uidentity, join_date))
+            if uidentity == "1":
+                randsec = random.randint(0,9)
+                in_arr_mod.append((randsec,init_acc + str(i),))
         self.cursor.executemany(sql, in_arr)
         self.database.commit()
+        sql_md = '''insert into moderator_info(section_number,account)
+        values(%s,%s)
+        '''
         print("用户生成完毕")
         # 随机生成一些版块
         in_arr.clear()
@@ -567,11 +572,11 @@ class DB:
                 for t in range(1, floor_num + 1):
                     a_reply = random.randint(0, 199)  # 回帖人和回帖时间
                     YT1 = last_rep[0] + random.randint(0, 1)
-                    MT1 = last_rep[1] + random.randint(0, 1)
-                    DT1 = last_rep[2] + random.randint(0, 2)
-                    HT1 = last_rep[3] + random.randint(0, 2)
-                    iT1 = last_rep[4] + random.randint(0, 5)
-                    ST1 = last_rep[5] + random.randint(0, 5)
+                    MT1 = min(last_rep[1] + random.randint(0, 1),12)
+                    DT1 = min(last_rep[2] + random.randint(0, 2),28)
+                    HT1 = min(last_rep[3] + random.randint(0, 2),23)
+                    iT1 = min(last_rep[4] + random.randint(0, 5),59)
+                    ST1 = min(last_rep[5] + random.randint(0, 5),59)
                     content_len = random.randint(100, 300)
                     reply_content = fake.text(max_nb_chars=content_len, ext_word_list=None)
                     like_num = random.randint(10, 50)
@@ -589,6 +594,9 @@ class DB:
         print("帖子与回复信息生成完毕")
         self.update_reply_number()
         self.update_nikename()
+        self.cursor.executemany(sql_md, in_arr_mod)
+        self.database.commit()
+        print("版主生成完毕")
         print("数据生成全部完成")
 
     # 由于生成数据的函数没有处理replynum，这里进行处理
@@ -672,10 +680,18 @@ class DB:
         self.database.commit()
         return section
 
+    def query_one_section(self,sec_num):
+        sql='''select * from sec_info where section_number= '%s'
+        ''' %(sec_num)
+        self.cursor.execute(sql)
+        ret = self.cursor.fetchone()
+        self.database.commit()
+        return ret
+
     def insert_post(self, section_number, account, post_title,
                     post_content, post_time):
         sql1 = '''
-            select count(*) from post_info
+            select max(post_number) from post_info
         '''
         self.cursor.execute(sql1)
         post_number = self.cursor.fetchall()[0][0] + 1
@@ -695,6 +711,11 @@ class DB:
                post_content, post_time, 0, 0, post_time)
         self.cursor.execute(sql3)
         self.database.commit()
+      #  sql4='''insert into recentpost_info
+      #    (account,post_number,post_time)values('%s',%s,'%s')
+      #  ''' % (account, post_number, post_time)
+      #  self.cursor.execute(sql4)
+      #  self.database.commit()
         return post_number
 
     def query_search_post(self, keyWord):
@@ -723,6 +744,113 @@ class DB:
         self.database.commit()
         return search_res
 
+    def update_likenum(self,post_number,floor_number):
+        sql = '''update reply_info set like_num = like_num + 1 
+        where post_number = '%s' and reply_floor = '%s'
+        ''' %(str(post_number),str(floor_number))
+        self.cursor.execute(sql)
+        self.database.commit()
+
+    def insert_moderator_info(self,account,section_number):
+        sql='''insert into moderator_info(section_number,account) 
+        values('%s','%s')
+        ''' %(section_number,account)
+        self.cursor.execute(sql)
+        self.database.commit()
+
+    def get_user_identity(self,account):
+        sql ='''select uidentity from user_info 
+        where account = '%s'
+        ''' %(account)
+        self.cursor.execute(sql)
+        ret = self.cursor.fetchone()[0]
+        return ret
+
+    def get_moderator_sec(self,account):
+        sql = '''select section_number from moderator_info where account='%s'
+        ''' %(account)
+        self.cursor.execute(sql)
+        ret = str(self.cursor.fetchone()[0])
+        return ret
+
+    def delete_post(self,post_number):
+        sql='''delete from post_info where post_number = '%s'
+        ''' %(post_number)
+        self.cursor.execute(sql)
+        self.database.commit()
+
+    def delete_user(self,account):
+        sql = '''delete from user_info where account='%s'
+        ''' %(account)
+        self.cursor.execute(sql)
+        self.database.commit()
+
+    def change_section_name(self,section_number,new_name):
+        sql='''update sec_info set section_name='%s'
+        where section_number='%s'
+        ''' %(new_name,section_number)
+        self.cursor.execute(sql)
+        self.database.commit()
+
+    def delete_reply(self,post_number,floor_number,account):
+        sql1 = '''
+            select account from post_info
+            WHERE post_number = '%s'
+        '''%(post_number)
+        self.cursor.execute(sql1)
+        self.database.commit()
+        post_account = self.cursor.fetchall()[0][0]
+        print(1)
+        if post_account != account:
+            return False
+        print(2)
+        sql='''delete from reply_info 
+        where post_number='%s' and reply_floor='%s'
+        '''%(post_number,floor_number)
+        self.cursor.execute(sql)
+        self.database.commit()
+        #还得更新比他小的
+        sql2 = '''update reply_info set reply_floor=reply_floor-1
+        where post_number = '%s' and reply_floor > '%s'
+        ''' %(post_number,floor_number)
+        self.cursor.execute(sql2)
+        self.database.commit()
+        # 减少帖子楼层数
+        sql3 = '''
+            update post_info
+            set reply_number = (
+              select count(*) from reply_info
+              where post_number = %s
+            ) 
+            WHERE post_number = %s
+        '''%(post_number,post_number)
+        self.cursor.execute(sql3)
+        self.database.commit()
+        print("删除陈宫")
+        return True
+
+    def fetch_adminmail(self):
+        sql = '''select * from dba_mailbox'''
+        self.cursor.execute(sql)
+        self.database.commit()
+        ret = self.cursor.fetchall()
+        sql2 = '''select count(*) from dba_mailbox where if_read=0'''
+        self.cursor.execute(sql2)
+        self.database.commit()
+        read_tag = int(self.cursor.fetchone()[0])
+        return ret,read_tag
+
+    def delete_adminmail(self,tag_time):
+        sql = '''delete from dba_mailbox where tag_time='%s'
+        ''' %(tag_time)
+        self.cursor.execute(sql)
+        self.database.commit()
+
+    def read_adminmail(self,tag_time):
+        sql = '''update dba_mailbox set if_read=1 where tag_time='%s'
+        ''' % (tag_time)
+        self.cursor.execute(sql)
+        self.database.commit()
 
 from bbs import *
 
