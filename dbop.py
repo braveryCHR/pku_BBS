@@ -800,8 +800,14 @@ class DB:
         self.cursor.execute(sql1)
         self.database.commit()
         post_account = self.cursor.fetchall()[0][0]
-        print(1)
-        if post_account != account:
+        sql5= '''
+            select uidentity from user_info
+            where account = '%s'
+        '''%(account)
+        self.cursor.execute(sql5)
+        self.database.commit()
+        uidentity = self.cursor.fetchall()[0][0]
+        if post_account != account and uidentity != 2 and uidentity !=1 :
             return False
         print(2)
         sql='''delete from reply_info 

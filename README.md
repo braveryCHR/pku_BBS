@@ -14,7 +14,7 @@
 - 使用语言：Python+HTML+CSS+JavaScript+SQL
 
 - 数据库：MySQL
-- 前后端框架：flask
+- 前后端框架：flask+ajax技术
 - 前端装饰：bootstrap
 
 **工程量**：约三千行代码
@@ -107,9 +107,13 @@ BBS信息：
 
 （图中reply_floor应该虚下划线，由于软件无此功能故以实线代替）
 
-![1546004909550](./static/images/ER.jpg)
+![1546004909550](./static/images/E-R.jpg)
+
+
 
 #### 关系模式表
+
+我们设计的关系模式基本符合3-NF的要求，在效率和冗余之间做了权衡。
 
 1、用户信息表：user_info
 
@@ -161,7 +165,7 @@ BBS信息：
 | reply_time               | DATETIME    | 精确到秒               |
 | like_num                 | Int         |                        |
 
-5、版主表（n对n，所以专门设一个表）：moderator_info
+5、版主表（1对n，所以专门设一个表）：moderator_info
 
 | 属性                        | 数据类型    | 备注     |
 | --------------------------- | ----------- | -------- |

@@ -38,7 +38,7 @@
         <strong><p class="text-left" class="list-group-item-text" >{{item[5]}}</p></strong>
         <button class="btn btn-success" type='button' id='btn{{item[1]}}'>赞一下</button>
 		<!--把踩一下删除了-->
-		<a href="{{ url_for('delete_reply',post_number=post_number,floor_number=item[1]) }}" class="btn btn-success">删除</a>
+		<a href="{{ url_for('delete_reply',post_number=post_number,floor_number=item[1]) }}" class="btn btn-warning">删除</a>
         <p></p>
 		<script>
 			$(document).ready(function(){
